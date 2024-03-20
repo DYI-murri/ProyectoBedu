@@ -53,12 +53,15 @@ La correlación de Pearson se emplea para medir la relación lineal entre variab
 En esta sección, se lleva a cabo el entrenamiento de varios modelos utilizando la biblioteca Lazypredict. Se comparan y evalúan simultáneamente diversos modelos, incluyendo ExtraTreesRegressor, DecisionTreeRegressor, XGBRegressor, RandomForestRegressor, BaggingRegressor, y otros.
 A continuación, se muestran los resultados de la evaluación de los modelos, incluyendo métricas como el coeficiente de determinación (R²), el error cuadrático medio (MSE), y el tiempo de entrenamiento. Estos resultados proporcionan una visión general del rendimiento de cada modelo y ayudan a seleccionar el más adecuado para la tarea de predicción de la probabilidad de padecer un ataque cardíaco.
 
-|Modelo	|R²	|MSE	|Tiempo de Entrenamiento (segundos)|
-|ExtraTreesRegressor	|0.90|	0.09	|0.24|
-|DecisionTreeRegressor|	0.90|	0.09|	0.02|
-|XGBRegressor|	0.90	|0.09|	0.21|
-|RandomForestRegressor|	0.88|	0.10|	0.34|
-|BaggingRegressor|	0.86|	0.11|	0.06|
+| Modelo                        | R²    | Precisión |
+|-------------------------------|-------|-----------|
+| ExtraTreesRegressor           | 0.90  | 0.90      |
+| DecisionTreeRegressor         | 0.90  | 0.90      |
+| XGBRegressor                  | 0.90  | 0.90      |
+| MLPRegressor                  | 0.50  | 0.52      |
+| SVR                           | 0.63  | 0.64      |
+| CNN                           | -     | 0.8143    |
+
 
 Estos resultados son fundamentales para seleccionar el modelo más adecuado para la tarea de predicción y brindan información valiosa sobre su desempeño y eficiencia.
 
